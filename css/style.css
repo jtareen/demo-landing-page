@@ -1,0 +1,473 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'ui-sans-serif', 'system-ui';
+}
+
+body {
+    text-align: center;
+}
+
+.bg-img {
+    opacity: 0.6;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+    z-index: -1;
+}
+
+/* -------- NAVBAR START -------- */
+
+nav {
+    position: fixed;
+    top: 5px;
+    left: 0;
+    margin: 0 5%;
+    width: 90%;
+    padding: 0% 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(90deg, #fdefd7, #f19a46);
+    border-radius: 35px;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8em;
+    font-weight: bolder;
+    padding: 3px 0;
+}
+
+.logo-img {
+    width: 95px;
+}
+
+.gradient-text {
+    display: inline-block;
+    background-image: linear-gradient(90deg, #763418, #ed7d22);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.navbar-links {
+    display: flex;
+    list-style: none;
+}
+
+.navbar-links li {
+    margin-left: 20px;
+}
+
+.navbar-links li a {
+    text-decoration: none;
+    color: #fef8ee;
+    font-weight: 600;
+    font-size: large;
+    transition: color .2s ease;
+}
+
+.navbar-links li a:hover {
+    color: #763418;
+}
+
+/* -------- NAVBAR FINISH -------- */
+
+
+/* -------- HERO SECTION START -------- */
+
+.hero {
+    background-color: #40180abc;
+    position: relative;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+.hero-content h1 {
+    font-size: 2.5em;
+    color: #f5bf7c;
+    text-shadow: 2px 2px #40180a;
+}
+
+.hero-content h1>span {
+    font-weight: 900;
+}
+
+.hero-content p {
+    color: #f5bf7c;
+    font-size: large;
+    margin-top: 4vh;
+    margin-bottom: 9vh;
+
+}
+
+.button {
+    width: 30%;
+    height: 40px;
+    outline: none;
+    background: linear-gradient(100deg, #f19a46, #d35f17);
+    color: #f9daaf;
+    border: none;
+    font-weight: 700;
+    box-shadow: 10px 5px 32px #381508;
+    border-radius: 35px;
+    transition: color .5s;
+}
+
+.button:hover {
+    background: linear-gradient(100deg, #ed7d22, #b84c16);
+}
+
+/* -------- HERO SECTION END -------- */
+
+
+/* -------- MENU SECTION START -------- */
+
+#menu {
+    position: relative;
+    background-image: linear-gradient(-217deg, #fef8ee, #f5bf7c);
+    background: linear-gradient(0deg, #b84c16, #40180a);
+    width: 100%;
+    height: 300px;
+}
+
+.card-group {
+    position: absolute;
+    top: -100px;
+    width: 90%;
+    margin: 0 5%;
+    display: flex;
+    padding: 50px 0;
+    justify-content: space-around;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    background: linear-gradient(0deg, #d35f17, #f19a46);
+    box-shadow: 10px 5px 32px #40180a;
+    border-radius: 15px;
+}
+
+.card-img {
+    margin: 20px 0;
+    width: 50%;
+    border-radius: 60%;
+    overflow: hidden;
+}
+
+.card-content>* {
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #40180a;
+}
+
+p {
+    color: #f5bf7c;
+}
+
+/* -------- ABOUT SECTION START -------- */
+
+.about {
+    background: linear-gradient(180deg, #b84c16, #40180a);
+}
+
+/* -------- ABOUT SECTION END -------- */
+
+/* -------- Reservations SECTION START -------- */
+
+.reservations {
+    background: linear-gradient(0deg, #b84c16, #40180a);
+
+}
+
+/* -------- Reservations SECTION END -------- */
+
+/* -------- CONTACT SECTION START -------- */
+
+.contact {
+    background: linear-gradient(180deg, #b84c16, #40180a);
+}
+
+/* -------- CONTACT SECTION END -------- */
+
+
+.down-sections {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    align-items: center;
+}
+
+.down-sections-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 300px;
+    padding: 15px;
+}
+
+.down-sections:nth-child(even)>.down-sections-content {
+    float: left;
+    margin-left: 5%;
+}
+
+.about-img, .contact-img {
+    display: inline;
+    position: absolute;
+    left: 0;
+    width: 50%;
+    height: 300px;
+    overflow: hidden;
+}
+
+.about-img img, .contact-img img {
+    width: 100%;
+    clip-path: polygon(0% 0%, 0% 256%, 100% 0%, 100% 0%);
+}
+
+.down-sections:nth-child(odd)>.down-sections-content {
+    float: right;
+    margin-right: 5%;
+}
+
+.reservations-img {
+    display: inline;
+    position: absolute;
+    right: 0;
+    width: 50%;
+    height: 300px;
+    overflow: hidden;
+}
+
+.reservations-img img {
+    width: 100%;
+    clip-path: polygon(0% 0%, 100% 213%, 100% 0%, 100% 0%);
+}
+
+.down-sections-content>* {
+    margin: 8px 0;
+}
+
+.clearfix {
+    overflow: auto;
+}
+
+
+/* -------- FOOTER START -------- */
+
+footer{
+    background-color: #40180a;
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    height: 70px;
+    margin: 0 5%;
+}
+
+.footer-content p{
+    display: inline-block;
+}
+
+.social-icons{
+    display: flex;
+}
+
+.social-icons a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #f5bf7c;
+    width: 35px;
+    height: 35px;
+    margin-left: 20px;
+    border-radius: 8px;
+}
+
+.social-icons a:hover{
+    background: #f5bf7c;
+    color: #40180a;
+}
+
+
+/* -------- FOOTER END -------- */
+
+
+
+
+/* -------- tablet size -------- */
+
+@media only screen and (max-width: 800px) {
+
+    /* -------- MENU SECTION -------- */
+    .hero {
+        height: 400px;
+    }
+
+    /* -------- MENU SECTION -------- */
+    #menu {
+        height: 500px;
+    }
+
+    .card-group {
+        flex-wrap: wrap;
+
+    }
+
+    .card {
+        display: flex;
+        width: 40%;
+        margin-bottom: 10px;
+    }
+
+    .button {
+        width: fit-content;
+        padding: 0 10px;
+    }
+}
+
+
+/* -------- mobile size -------- */
+
+@media only screen and (max-width: 700px) {
+
+    /* -------- NAVBAR SECTION -------- */
+    nav {
+        display: none;
+    }
+
+
+    /* -------- HERO SECTION -------- */
+
+    .hero {
+        height: 500px;
+        font-size: 100%;
+    }
+
+    .button {
+        width: fit-content;
+        padding: 0 9px;
+    }
+
+    /* -------- MENU SECTION START -------- */
+
+    #menu {
+        position: relative;
+        height: fit-content;
+    }
+
+    .card-group {
+        position: relative;
+        top: 0;
+        flex-wrap: wrap;
+        padding: 20px 0;
+    }
+
+    .card {
+        display: flex;
+        width: 40%;
+    }
+
+}
+
+
+/* -------- mobile size -------- */
+
+@media only screen and (max-width: 500px) {
+
+    /* -------- NAVBAR SECTION -------- */
+    nav {
+        display: none;
+    }
+
+    /* -------- HERO SECTION -------- */
+
+    .hero {
+        height: 300px;
+        font-size: 100%;
+    }
+
+    .hero-content h1 {
+        font-size: 130%;
+    }
+
+    .hero-content p {
+        font-size: 80%;
+        margin-top: 2vh;
+    }
+
+
+    .button {
+        margin-top: 30px;
+        width: 60%;
+        height: 30px;
+    }
+
+
+    /* -------- MENU SECTION -------- */
+
+    #menu {
+        position: relative;
+        height: fit-content;
+    }
+
+    .card-group {
+        position: relative;
+        top: 0;
+        flex-wrap: wrap;
+        padding: 20px 0;
+    }
+
+    .card {
+        display: flex;
+        width: 65%;
+    }
+
+    
+.footer-content{
+    flex-direction: column;
+    justify-content: center;
+    height: 100px;
+}
+
+.footer-content p{
+    display: inline-block;
+    padding: 10px 0;
+}
+
+}
